@@ -1,4 +1,4 @@
 #!/bin/bash
 
 i3 fullscreen enable
-unimatrix -s 95 -a -o -f 
+unimatrix -s 96 -a -o -f 
