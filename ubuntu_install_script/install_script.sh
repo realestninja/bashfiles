@@ -46,11 +46,13 @@ read -p "Create symlinks to Dotfiles? (y/N)? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$  ]]
 then
 	# Create symlinks
-	ln -s ~/Dotfiles/.vim/.vimrc ~
+	ln -s ~/Dotfiles/vim/.vimrc ~
 	ln -s ~/Dotfiles/i3config/config ~/.i3/config
 	ln -s ~/Dotfiles/fonts ~/.fonts
 	ln -s ~/Dotfiles/compton/compton.conf ~/.config/compton.conf
 	ln -s ~/Dotfiles/tmux/.tmux.conf ~
+	ln -s ~/Dotfiles/bash/.bashrc ~
+	source ~/.bashrc
 fi
 
 echo ''
