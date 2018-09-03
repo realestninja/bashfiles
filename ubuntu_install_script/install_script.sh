@@ -20,7 +20,7 @@ read -p "Create Folders and download Dotfiles? (y/N)? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$  ]]
 then
 	# Get Dotfiles and create folder structure
-	git clone https://github.com/realestninja/Dotfiles.git ~/
+	git clone https://github.com/realestninja/Dotfiles.git ~/Dotfiles
 	mkdir ~/Code
 	mkdir ~/.vim
 	mkdir ~/.vim/bundle
@@ -46,12 +46,13 @@ read -p "Create symlinks to Dotfiles? (y/N)? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$  ]]
 then
 	# Create symlinks
+	rm ~/.bashrc
+	ln -s ~/Dotfiles/bash/.bashrc ~
 	ln -s ~/Dotfiles/vim/.vimrc ~
 	ln -s ~/Dotfiles/i3config/config ~/.i3/config
 	ln -s ~/Dotfiles/fonts ~/.fonts
 	ln -s ~/Dotfiles/compton/compton.conf ~/.config/compton.conf
 	ln -s ~/Dotfiles/tmux/.tmux.conf ~
-	ln -s ~/Dotfiles/bash/.bashrc ~
 	source ~/.bashrc
 fi
 
@@ -152,3 +153,4 @@ then
 fi
 
 echo ''
+
