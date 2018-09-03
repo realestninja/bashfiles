@@ -89,7 +89,6 @@ then
 	sudo apt install scrot
 	sudo apt install xdotool
 	sudo apt install xserver-xorg-input-synaptics
-	sudo apt install neofetch
 	sudo apt install fortune
 	sudo apt install cowsay
 	sudo apt install compton
@@ -99,7 +98,12 @@ then
 	sudo apt install nodejs
 	sudo apt install npm
 	sudo apt install docker
+	sudo add-apt-repository ppa:dawidd0811/neofetch
+	sudo apt update
+	sudo apt install neofetch
 fi
+
+
 
 echo ''
 read -p "Get scripts? (y/N)? " -n 1 -r
@@ -125,10 +129,10 @@ if [[ $REPLY =~ ^[Yy]$  ]]
 then
 	# get extras
 	# tool for backlight buttons on thinkpad x1 carbon 2nd gen -> https://github.com/haikarainen/light#installation
-	git clone https://github.com/haikarainen/light.git ~/temporary
+	git clone https://github.com/haikarainen/light.git ~/temporary/light/
 
 	# polybar download
-	git clone https://github.com/jaagr/polybar.git ~/temporary
+	git clone https://github.com/jaagr/polybar.git ~/temporary/polybar/
 
 	#unimatrix
 	sudo curl -L https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -o /usr/local/bin/unimatrix
