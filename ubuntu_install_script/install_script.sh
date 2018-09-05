@@ -88,6 +88,7 @@ then
 	sudo apt install vlc
 	sudo apt install clementine
 	sudo apt install scrot
+	sudo apt install filezilla
 	sudo apt install xdotool
 	sudo apt install xserver-xorg-input-synaptics
 	sudo apt install fortune
