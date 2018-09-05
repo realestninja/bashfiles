@@ -53,7 +53,6 @@ then
 	ln -s ~/Dotfiles/fonts ~/.fonts
 	ln -s ~/Dotfiles/compton/compton.conf ~/.config/compton.conf
 	ln -s ~/Dotfiles/tmux/.tmux.conf ~
-	source ~/.bashrc
 fi
 
 echo ''
@@ -70,7 +69,6 @@ if [[ $REPLY =~ ^[Yy]$  ]]
 then
 	# Download and set shell to solarized-dark
 	git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-	base16_solarized-dark
 fi
 
 echo ''
@@ -87,6 +85,8 @@ then
 	sudo apt install cmake
 	sudo apt install curl
 	sudo apt install feh
+	sudo apt install vlc
+	sudo apt install clementine
 	sudo apt install scrot
 	sudo apt install xdotool
 	sudo apt install xserver-xorg-input-synaptics
@@ -113,7 +113,9 @@ then
 	# Get scripts
 	mkdir ~/Scripts
 	git clone https://github.com/realestninja/bashfiles.git ~/Scripts
+	cd ~/Scripts
 	sh ~/Scripts/setup.sh
+	cd 
 fi
 
 echo ''
@@ -145,12 +147,5 @@ echo ''
 echo '-------------------------------------------'
 echo ''
 echo 'All done.'
-echo ''
-read -p "Open list for downloads required to be done manually?? (y/N)? " -n 1 -r
-if [[ $REPLY =~ ^[Yy]$  ]]
-then
-	firefox manual-installs.html
-fi
-
 echo ''
 
