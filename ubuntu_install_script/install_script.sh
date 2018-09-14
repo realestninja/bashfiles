@@ -95,7 +95,6 @@ then
 	sudo apt install cowsay
 	sudo apt install compton
 	sudo apt install tmux
-	sudo apt install unclutter
 	sudo apt install xtrlock
 	sudo apt install nodejs
 	sudo apt install npm
