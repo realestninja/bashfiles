@@ -25,6 +25,7 @@ fc-cache -f -v
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 base16_solarized-dark
 
+sudo apt install p7zip
 sudo apt install texlive-full
 sudo apt install ranger 
 sudo apt install gdebi-core
