@@ -80,6 +80,7 @@ then
 	sudo apt install gdebi-core
 	sudo apt install alacarte
 	sudo apt install chrome-gnome-shell
+	sudo apt install tree
 	sudo apt install autoreconf 
 	sudo apt install make
 	sudo apt install cmake
