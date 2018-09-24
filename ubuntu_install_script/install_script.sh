@@ -56,6 +56,14 @@ then
 fi
 
 echo ''
+read -p "Get tmux plugin manager (tpm)? (y/N)? " -n 1 -r
+if [[ $REPLY =~ ^[Yy]$  ]]
+then
+	mkdir -p ~/.tmux/plugins/tpm
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
+echo ''
 read -p "Clear fonts cache / Apply new fonts? (y/N)? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$  ]]
 then
