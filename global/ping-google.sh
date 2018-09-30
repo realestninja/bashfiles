@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ping www.google.de
+echo 'Pinging Google.' && ping 216.58.205.195
