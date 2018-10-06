@@ -34,6 +34,8 @@ read -p "Install Vim? (y/N)? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$  ]]
 then
 	# Get Vim
+	sudo add-apt-repository ppa:jonathonf/vim
+	sudo apt update
 	sudo apt install vim
 	sudo apt install vim-gnome -y
 
