@@ -99,6 +99,7 @@ then
 	sudo apt install vlc
 	sudo apt install clementine
 	sudo apt install scrot
+	sudo apt install gthumb
 	sudo apt install filezilla
 	sudo apt install gimp
 	sudo apt install xdotool
