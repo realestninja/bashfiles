@@ -1,9 +1,12 @@
 # Scripts
 
+## Screensaver
 Screensaver requires:
 `https://github.com/will8211/unimatrix`
 
-Fix Trackpad:
+## Trackpad
+Set natural scrolling both vertical and horizontal
+
 ```xinput list```
 
 Pick ID of Trackpad
