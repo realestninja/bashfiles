@@ -12,7 +12,7 @@ echo ''
 read -p "Git required. Install git? (y/N)? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$  ]]
 then
-	sudo apt install git
+	sudo apt install git -y
 fi
 
 echo ''
@@ -36,7 +36,7 @@ then
 	# Get Vim
 	sudo add-apt-repository ppa:jonathonf/vim
 	sudo apt update
-	sudo apt install vim
+	sudo apt install vim -y
 	sudo apt install vim-gnome -y
 
 	# Install vundle
@@ -85,36 +85,37 @@ echo ''
 read -p "Install software? (y/N)? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$  ]]
 then
-	sudo apt install texlive-full
-	sudo apt install ranger 
-	sudo apt install gdebi-core
-	sudo apt install alacarte
-	sudo apt install chrome-gnome-shell
-	sudo apt install tree
-	sudo apt install autoreconf 
-	sudo apt install make
-	sudo apt install cmake
-	sudo apt install curl
-	sudo apt install feh
-	sudo apt install vlc
-	sudo apt install clementine
-	sudo apt install scrot
-	sudo apt install gthumb
-	sudo apt install filezilla
-	sudo apt install gimp
-	sudo apt install xdotool
-	sudo apt install xserver-xorg-input-synaptics
-	sudo apt install fortune
-	sudo apt install cowsay
-	sudo apt install compton
-	sudo apt install tmux
-	sudo apt install xtrlock
-	sudo apt install nodejs
-	sudo apt install npm
-	sudo apt install docker
+	sudo apt install texlive-full -y
+	sudo apt install ranger -y
+	sudo apt install gdebi-core -y
+	sudo apt install alacarte -y
+	sudo apt install chrome-gnome-shell -y
+	sudo apt install tree -y
+	sudo apt install autoreconf  -y
+	sudo apt install make -y
+	sudo apt install cmake -y
+	sudo apt install curl -y
+	sudo apt install feh -y
+	sudo apt install vlc -y
+	sudo apt install clementine -y
+	sudo apt install scrot -y
+	sudo apt install gthumb -y
+	sudo apt install filezilla -y
+	sudo apt install xclip -y
+	sudo apt install gimp -y
+	sudo apt install xdotool -y
+	sudo apt install xserver-xorg-input-synaptics -y
+	sudo apt install fortune -y
+	sudo apt install cowsay -y
+	sudo apt install compton -y
+	sudo apt install tmux -y
+	sudo apt install xtrlock -y
+	sudo apt install nodejs -y
+	sudo apt install npm -y
+	sudo apt install docker -y
 	sudo add-apt-repository ppa:dawidd0811/neofetch
 	sudo apt update
-	sudo apt install neofetch
+	sudo apt install neofetch -y
 fi
 
 
@@ -128,14 +129,14 @@ then
 	git clone https://github.com/realestninja/bashfiles.git ~/Scripts
 	cd ~/Scripts
 	sh ~/Scripts/setup.sh
-	cd 
+	cd
 fi
 
 echo ''
 read -p "Install i3? (y/N)? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$  ]]
 then
-	sudo apt install i3
+	sudo apt install i3 -y
 	# i3 gaps installation for ubuntu -> https://gist.github.com/dabroder/813a941218bdb164fb4c178d464d5c23
 fi
 
